@@ -1,31 +1,13 @@
-import java.util.Scanner;
-
 public class atividade02 {
-    public static void main(String[] args) {
-    Scanner sc1 = new Scanner(System.in);
+   public static void main(String[] args) {
+      int x, y;
 
+      for (x = 0; x <= 125; x++) {
+         if ((x % 2 != 0) && (x % 3 != 0)) {
+            System.out.println(x);
 
-    Float h,b,B,a;
+         }
 
-    System.out.println("Digite a altura: ");
-    h = sc1.nextFloat();
-    System.out.println("Digite a base menor: ");
-    b = sc1.nextFloat();
-    System.out.println("Digite a base maior: ");
-    B = sc1.nextFloat();
-
-    while (b < B) {
-        System.out.println("Digite a altura: ");
-        h = sc1.nextFloat();
-        System.out.println("Digite a base menor: ");
-        b = sc1.nextFloat();
-        System.out.println("Digite a base: ");
-        B = sc1.nextFloat();
-        }
-
-    a = (h * (b + B))/2;
-    System.out.println("O valor é: " + a); 
-    System.out.println("O valor arredondado é: " + Math.round(a));
-        
-    }
+      }
+   }
 }
